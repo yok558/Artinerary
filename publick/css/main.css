@@ -1,0 +1,12 @@
+
+
+.header__hr{
+    border: none;
+    background-color: #fff;
+    color: #fff;
+    height: 2px;
+}
+
+.nav-border-bottom {
+    border-bottom: 2px solid #fff
+}
