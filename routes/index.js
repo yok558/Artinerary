@@ -1,3 +1,44 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const router = express.Router();
+
+const artPiece = require('../models/art');
+
+
+mongoose.connect('mongodb://localhost:27017/art', { useNewUrlParser: true, useUnifiedTopology: true });
+
+const app = express();
+
+
+router.get('/', async function (req, res, next) {
+  res.send('страница карт!!!!');
+  collection = await artPiece.find();
+  console.log(collection);
+})
+
+
+
+// router.get('/:filtres', async function(req, res, next) {
+//   res.send('страница карт!');
+//   let nameCategory = req.params.category;
+//   let collection = [];
+//   collection = await artPiece.find({ category: 'nameCategory' });
+//   console.log(collection);
+// });
+
+
+// router.get('/painting', (req, res, next) => {
+//   res.send('страница картинами!');
+// });
+
+// router.get('/photograph', (req, res, next) => {
+//   res.send('страница с фотографиями!');
+// });
+
+// router.get('/sculpture', (req, res, next) => {
+//   res.send('страница со скульптурами!');
+// });
+
 // const express = require('express');
 // const { sessionChecker } = require('../middleware/auth');
 // const User = require('../models/users');
@@ -57,4 +98,4 @@
 //   }
 // });
 
-// module.exports = router;
+module.exports = router;
