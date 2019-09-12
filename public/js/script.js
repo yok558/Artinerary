@@ -1,5 +1,6 @@
-const filterButtonPrice = document.getElementsByClassName('price');
+const filterButtonPrice = document.getElementsByClassName('btn-filter-category');
 const filterButtonCategory = document.getElementsByClassName('category');
+console.log(filterButtonPrice);
 
 function listenerButtonPrice() {
   for (let i = 0; i < filterButton.length; i++) {

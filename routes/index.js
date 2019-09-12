@@ -9,11 +9,13 @@ mongoose.connect('mongodb://localhost:27017/art', { useNewUrlParser: true, useUn
 
 const app = express();
 
+// router.get('/login', (req, res, next) => {
+// //   res.render('login');
 
 router.get('/', async function (req, res, next) {
-  res.send('страница карт!!!!');
-  collection = await artPiece.find();
-  console.log(collection);
+  res.render('layout');
+  collection = await artPiece.find()
+  console.log(collection)
 })
 
 
