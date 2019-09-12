@@ -6,6 +6,7 @@ const artPieceSchema = new mongoose.Schema({
   price: Number,
   imgLing: String,
   category: String,
-})
+});
+
 
 module.exports = mongoose.model('ArtPiece', artPieceSchema);

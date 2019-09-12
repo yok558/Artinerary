@@ -1,22 +1,24 @@
-const filterButton = document.getElementsByName;
+const filterButtonPrice = document.getElementsByClassName('price');
+const filterButtonCategory = document.getElementsByClassName('category');
 
-filterArt.addEventListener('click', async e => {
-  e.preventDefault();
-  const [nameInput, addressInput, eyesInput, passwordInput] = e.target.elements;
+function listenerButtonPrice() {
+  for (let i = 0; i < filterButton.length; i++) {
+    filterButton[i].addEventListener('click', async e => {
+      e.preventDefault();
+      let priceValue = e.target.value;
+      return priceValue;
+    });
+  }
+}
 
-  const response = await fetch('/beavers/create', {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify({
-      name: nameInput.value,
-      address: addressInput.value,
-      eyes: eyesInput.value,
-      password: passwordInput.value,
-    }),
-  });
+function listenerButtonCategory() {
+  for (let i = 0; i < filterButton.length; i++) {
+    filterButton[i].addEventListener('click', async e => {
+      e.preventDefault();
+      let priceValue = e.target.value;
+      return priceValue;
+    });
+  }
+}
 
-  const newBeaver = await response.json();
-  console.log(newBeaver);
-});
+listenerButton();
