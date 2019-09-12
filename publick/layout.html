@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href='./css/main.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <title>Artinerary</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar-dark nav-border-bottom py-3 header-nav_color">
+      <div class="container-fluid align-middle">
+        <div class="row">
+          <div class="col-xl-1"></div>
+          <h1 id="home" class="header-nav__head col-xl-7"><a href="#">Artinerary</a></h1>
+          <div class="col-xl-2 mt-3">
+            <a id="nav-search" href="#" class="m-2"><img src="img/header/search.png" alt="search" /></a>
+            <a id="nav-like" href="#" class="m-2"><img src="img/header/likes.png" alt="likes" />
+              <sub class="nav__counter" id="nav-like__counter">0</sub> </a>
+            <a id="nav-basket" href="#" class="m-2"><img src="img/header/basket.png" alt="bascet" />
+              <sub class="nav__counter" id="nav-bascet__counter">0</sub> </a>
+            <a id="nav-human" href="#" class="m-2"><img src="img/header/people.png" alt="peoples" /></a>
+          </div>
+          <div class="col-xl-2 mt-3">
+            <a class="sign-up" id="sign-up" href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="container-fluid_carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/slider/slideOne.png" alt="Первый слайд">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Это первый слайд</h3>
+              <p>Ага, да</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/slider/slideOne.png" alt="Второй слайд">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Эт второй</h3>
+              <p>Кря</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/slider/slideOne.png" alt="Третий слайд">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Ну, а это третий</h3>
+              <p>Он самый</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="first">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-xl-6 text-left py-2">
+            Browse Works for Sale
+          </div>
+          <div class="col-xl-6 text-right">
+            <a class="text-dark" href="">View All</a>
+          </div>
+        </div>
+        <div class="first-btn row my-3 border-low">
+          <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">Paintings</button>
+          <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">Sculpture</button>
+          <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">Drawings </button>
+          <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">Photography </button>
+          <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">Design</button>
+          <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">Multiples</button>
+        </div>
+        <h4 class="home-page-header">Our Latest Collection Inspired by
+          <span class="home-page-header__span">
+            Robert Frank
+          </span>
+        </h4>
+        <div class="row border-low">
+          <div class="col-xl-6 ">
+            <img class="rounded mx-auto d-block home-img__xy" src="./img/main/scriptTwo.png" alt="pic">
+          </div>
+          <div class="col-xl-6 ">
+            <img class="rounded mx-auto d-block home-img__xy" src="./img/main/screenOne.png" alt="pic">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="second">
+      <div class="container">
+        <div class="wrap py-2">
+          <div class="col-xl-12 text-left">
+            Browse By Price
+          </div>
+          <div class="second-btn second-btn_price row my-3 ">
+            <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">0-100</button>
+            <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">100-500</button>
+            <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">500-1000 </button>
+            <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">1000-2000 </button>
+            <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">2000-3000</button>
+            <button type="button" class="btn btn-outline-secondary col-xl-2 px-1 mx-auto">3000-5000</button>
+          </div>
+        </div>
+        <div class="wrap py-2">
+          <div class="col-xl-12 text-left">
+            Browse By dimensions
+          </div>
+          <div class="second-btn second-btn_price row my-3 ">
+            <button type="button" class="btn btn-outline-secondary col-xl-3 px-1 mx-auto">small</button>
+            <button type="button" class="btn btn-outline-secondary col-xl-3 px-1 mx-auto">medium</button>
+            <button type="button" class="btn btn-outline-secondary col-xl-3 px-1 mx-auto">large</button>
+          </div>
+        </div>
+        <div class="wrap">
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer p-4">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row text-xl-left">
+          <div class="col-xl-6">
+            <button type="button" class="btn btn-dark btn_footer mx-auto">Who We Are </button>
+            <ul class="list-unstyled quick-links">
+              <li></li><a class="text-light m-2" href="">About us</a></li>
+              <li></li><a class="text-light m-2" href="">Magazine</a></li>
+              <li></li><a class="text-light m-2" href="">The team</a></li>
+              <li></li><a class="text-light m-2" href="">Our selection criteria</a></li>
+              <li></li><a class="text-light m-2" href="">FAQ</a></li>
+              <li></li><a class="text-light m-2" href="">Jobs</a></li>
+              <li></li><a class="text-light m-2" href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-6">
+            <button type="button" class="btn btn-dark btn_footer mx-auto">Customer Service </button>
+            <ul class="list-unstyled quick-links">
+              <li></li><a class="text-light m-2" href="">Contact us</a></li>
+              <li></li><a class="text-light m-2" href="">Legal notices</a></li>
+              <li></li><a class="text-light m-2" href="">General Terms and Conditions</a></li>
+              <li></li><a class="text-light m-2" href="">Customer testimonials</a></li>
+              <li></li><a class="text-light m-2" href="">My profile</a></li>
+              <li></li><a class="text-light m-2" href="">Privacy center</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
