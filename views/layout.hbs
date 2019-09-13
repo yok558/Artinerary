@@ -23,9 +23,9 @@
           <div class="col-xl-3 mt-3 text-right">
             <a id="nav-search" href="#" class="m-2"><img src="img/header/search.png" alt="search" /></a>
             <a id="nav-like" href="#" class="m-2"><img src="img/header/likes.png" alt="likes" />
-              <sub class="nav__counter" id="nav-like__counter">0</sub> </a>
+              <sub class="nav__counter" id="nav-like__counter">{{countLike}}</sub> </a>
             <a id="nav-basket" href="#" class="m-2"><img src="img/header/basket.png" alt="bascet" />
-              <sub class="nav__counter" id="nav-bascet__counter">0</sub> </a>
+              <sub class="nav__counter" id="nav-bascet__counter">{{countBascet}}</sub> </a>
             <a id="nav-human" href="#" class="m-2"><img src="img/header/people.png" alt="peoples" /></a>
           </div>
           <div class="col-xl-2 mt-3">
@@ -38,7 +38,7 @@
 
   {{{body}}}
 
-  <footer class="footer p-4">
+  <footer class="footer p-4 navbar-fixed-bottom">
     <div class="container-fluid">
       <div class="container">
         <div class="row text-xl-left">

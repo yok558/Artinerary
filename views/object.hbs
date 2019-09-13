@@ -1,0 +1,27 @@
+<main class="main">
+    <div class="container mt-5">
+        <div class="wrap row">
+            {{#if object}}
+            <img class="col-xl-5 buy-img p-4 mx-auto" src="{{object.img}}" alt="pic">
+            <div class="wrap row col-xl-5 pt-5">
+                <p class="col-xl-12 h3">{{object.name}}</p>
+                <p class="col-xl-6 h3">Price: {{object.price}} $</p>
+                <p class="col-xl-6 h3">Size: {{object.size}}</p>
+                <div class="wrap col-xl-6 text-center">
+                    <button class="btn btn-outline-secondary m-3">Standart Buy</button>
+                    <div class="text-secondary ">
+                        goods directly without additional certification
+                    </div>
+                </div>
+                <div class="wrap col-xl-6 text-right">
+                    <button class="btn btn-outline-secondary m-3">Premium Buy</button>
+                    <div class="text-secondary ">
+                        confirmation of the certificate of authenticity of the goods
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+        </div>
+
+    </div>
+</main>
