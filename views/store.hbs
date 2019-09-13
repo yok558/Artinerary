@@ -1,7 +1,9 @@
 {{#each store}}
 <div class="magazine-wrap py-5 col-xl-4">
   <div class="wrap">
-    <img class="float-left mr-3 magazine-size-img" src={{this.img}} alt="pic">
+    <a class="btn-redirect__object" href="/store{{this._id}}">
+      <img class="float-left mr-3 magazine-size-img" src={{this.img}} alt="pic">
+    </a>
     <div class="desc-head">
       {{this.name}}
     </div>

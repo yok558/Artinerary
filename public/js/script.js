@@ -10,7 +10,7 @@ const searchButton = document.getElementsByClassName('btn-filter-search')[0];
 const filters = {
   priceValue: '',
   categoryValue: '',
-  dimensionsValue: '',
+  sizeValue: '',
 };
 
 function listenerButtonPrice() {
@@ -32,7 +32,7 @@ function listenerButtonCategory() {
 function listenerButtonDimensions() {
   for (let i = 0; i < filterButtonDimensions.length; i += 1) {
     filterButtonDimensions[i].addEventListener('click', (e) => {
-      filters.dimensionsValue = e.target.value;
+      filters.sizeValue = e.target.value;
     });
   }
 }
