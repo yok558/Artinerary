@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const artPieceSchema = new mongoose.Schema({
-  artName: String,
-  size: String,
+  name: String,
   price: Number,
-  imgLing: String,
+  img: String,
+  size: String,
   category: String,
 });
 
