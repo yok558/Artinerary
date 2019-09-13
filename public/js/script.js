@@ -57,6 +57,8 @@ searchButton.addEventListener('click', async (e) => {
   });
   const sendingRequest = await filterJSON.json();
   console.log(sendingRequest);
+  const store = document.getElementById('storePlace');
+  store.innerHTML = storeT({ store: sendingRequest });
 });
 
 // x();

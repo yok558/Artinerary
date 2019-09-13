@@ -1,0 +1,13 @@
+{{#each store}}
+<div class="magazine-wrap py-5 col-xl-4">
+  <div class="wrap">
+    <img class="float-left mr-3 magazine-size-img" src={{this.img}} alt="pic">
+    <div class="desc-head">
+      {{this.name}}
+    </div>
+    <div class="desc-description p-3">
+      {{this.price}} $
+    </div>
+  </div>
+</div>
+{{/each}}

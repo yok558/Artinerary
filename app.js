@@ -1,4 +1,5 @@
 const createError = require('http-errors');
+const handlebars = require('express-handlebars');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -17,9 +18,16 @@ const app = express();
 
 mongoose.connect('mongodb://localhost:27017/art', { useNewUrlParser: true, useUnifiedTopology: true });
 
+const hbs = handlebars.create({
+  defaultLayout: 'layout',
+  extname: 'hbs',
+  layoutsDir: path.join(__dirname, 'views'),
+  partialsDir: path.join(__dirname, 'views'),
+});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+app.engine('hbs', hbs.engine);
 
 app.use(logger('dev'));
 app.use(express.json());
