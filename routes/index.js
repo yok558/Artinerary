@@ -7,15 +7,31 @@ const artPiece = require('../models/art');
 
 mongoose.connect('mongodb://localhost:27017/art', { useNewUrlParser: true, useUnifiedTopology: true });
 
-const app = express();
+// const app = express();
 
 // router.get('/login', (req, res, next) => {
 // //   res.render('login');
 
-router.get('/', async (req, res, next) => {
+router.get('/', async (req, res) => {
   res.render('index');
-  const collection = await artPiece.find();
+  // const collection = await artPiece.find();
   // console.log(collection);
+});
+
+router.post('/', async (req, res, next) => {
+  const { priceValue, categoryValue, dimensionsValue } = req.body;
+  console.log([priceValue, categoryValue, dimensionsValue]);
+
+  try {
+    const filterData = await artPiece.find(
+      { price: priceValue },
+      { category: categoryValue },
+      { size: dimensionsValue },
+    );
+    res.status(200).json(filterData);
+  } catch (error) {
+    next(error);
+  }
 });
 
 // router.get('/:filtres', async function(req, res, next) {
