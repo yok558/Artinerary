@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/art', { useNewUrlParser: true, useUnifiedTopology: true });
 
-const ArtPiece = require('../models/art');
+const ArtPiece = require('./models/art');
 
 const entries = [
   {
@@ -105,7 +105,7 @@ const entries = [
   },
   {
     name: 'Obata -Original Wartime Painting 1943 -Winter Dawn, Missouri Valley',
-    price: '4 689,75 руб.',
+    price: '4689',
     img: 'https://ir.ebaystatic.com/cr/v/c1/s_1x2.gif',
     size: 'medium',
     category: 'paintings',

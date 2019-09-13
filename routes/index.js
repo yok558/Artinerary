@@ -1,18 +1,18 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const handlebars = require("handlebars");
-const path = require("path");
-const faker = require("faker");
+const express = require('express');
+const mongoose = require('mongoose');
+const handlebars = require('handlebars');
+const path = require('path');
+const faker = require('faker');
 
 const router = express.Router();
 
-const artPiece = require("../models/art");
+const artPiece = require('../models/art');
 
 const hbs = handlebars.create({
-  defaultLayout: "layout",
-  extname: "hbs",
-  layoutsDir: path.join(__dirname, "views"),
-  partialsDir: path.join(__dirname, "views")
+  defaultLayout: 'layout',
+  extname: 'hbs',
+  layoutsDir: path.join(__dirname, 'views'),
+  partialsDir: path.join(__dirname, 'views'),
 });
 
 // let like = 10;
@@ -40,7 +40,7 @@ const hbs = handlebars.create({
 
 // console.log("img: ", index);
 
-mongoose.connect("mongodb://localhost:27017/art", {
+mongoose.connect('mongodb://localhost:27017/art', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -67,11 +67,13 @@ router.post('/', async (req, res, next) => {
   console.log([priceValue, categoryValue, dimensionsValue]);
 
   try {
-    const filterData = await artPiece.find(
-      { price: priceValue },
-      { category: categoryValue },
-      { size: dimensionsValue },
-    );
+    const filterData = await artPiece.find({
+      price: { $gte: 0, $lte: Number(priceValue) },
+      category: categoryValue,
+      size: dimensionsValue,
+    });
+    console.log(filterData);
+
     res.status(200).json(filterData);
   } catch (error) {
     next(error);
