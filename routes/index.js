@@ -1,16 +1,60 @@
-const express = require('express');
-const mongoose = require('mongoose');
+const express = require("express");
+const mongoose = require("mongoose");
+const handlebars = require("handlebars");
+const path = require("path");
+const faker = require("faker");
 
 const router = express.Router();
 
-const artPiece = require('../models/art');
+const artPiece = require("../models/art");
 
-mongoose.connect('mongodb://localhost:27017/art', { useNewUrlParser: true, useUnifiedTopology: true });
+const hbs = handlebars.create({
+  defaultLayout: "layout",
+  extname: "hbs",
+  layoutsDir: path.join(__dirname, "views"),
+  partialsDir: path.join(__dirname, "views")
+});
+
+// let like = 10;
+// let bascet = 4;
+// const store = [];
+// const img = [];
+// for (let index = 0; index < 10; index++) {
+//   const element = {
+//     name: faker.name.findName(),
+//     img:
+//       "https://avatars.mds.yandex.net/get-pdb/33827/7f6d22fd-1988-44e6-b57d-28247b27c680/s1200?webp=false",
+//     author: faker.internet.userName(),
+//     price: faker.commerce.price(),
+//     size: faker.commerce.product()
+//   };
+//   const pic = {
+//     img:
+//       "https://avatars.mds.yandex.net/get-pdb/33827/7f6d22fd-1988-44e6-b57d-28247b27c680/s1200?webp=false"
+//   };
+
+//   img.push(pic);
+//   store.push(element);
+// }
+// const index = store[0];
+
+// console.log("img: ", index);
+
+mongoose.connect("mongodb://localhost:27017/art", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // const app = express();
 
-// router.get('/login', (req, res, next) => {
-// //   res.render('login');
+// router.get("/", (req, res, next) => {
+//   res.render("index", {
+//     countLike: like,
+//     countBascet: bascet,
+//     store: store,
+//     gallery: img
+//   });
+// });
 
 router.get('/', async (req, res) => {
   res.render('index');
