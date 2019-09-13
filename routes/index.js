@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
+
 const router = express.Router();
 
 const artPiece = require('../models/art');
-
 
 mongoose.connect('mongodb://localhost:27017/art', { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -12,13 +12,11 @@ const app = express();
 // router.get('/login', (req, res, next) => {
 // //   res.render('login');
 
-router.get('/', async function (req, res, next) {
-  res.render('layout');
-  collection = await artPiece.find()
-  console.log(collection)
-})
-
-
+router.get('/', async (req, res, next) => {
+  res.render('index');
+  const collection = await artPiece.find();
+  // console.log(collection);
+});
 
 // router.get('/:filtres', async function(req, res, next) {
 //   res.send('страница карт!');
@@ -27,7 +25,6 @@ router.get('/', async function (req, res, next) {
 //   collection = await artPiece.find({ category: 'nameCategory' });
 //   console.log(collection);
 // });
-
 
 // router.get('/painting', (req, res, next) => {
 //   res.send('страница картинами!');

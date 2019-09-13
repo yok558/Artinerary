@@ -1,25 +1,48 @@
-const filterButtonPrice = document.getElementsByClassName('btn-filter-category');
-const filterButtonCategory = document.getElementsByClassName('category');
-console.log(filterButtonPrice);
+const filterButtonPrice = document.getElementsByClassName('btn-filter-price');
+const filterButtonCategory = document.getElementsByClassName('btn-filter-category');
+const filterButtonDimensions = document.getElementsByClassName('btn-filter-dimensions');
+const searchButton = document.getElementsByClassName('btn-filter-search')[0];
+
 
 function listenerButtonPrice() {
-  for (let i = 0; i < filterButton.length; i++) {
-    filterButton[i].addEventListener('click', async e => {
+  for (let i = 0; i < filterButtonPrice.length; i++) {
+    filterButtonPrice[i].addEventListener('click', async (e) => {
       e.preventDefault();
-      let priceValue = e.target.value;
-      return priceValue;
+      const priceValue = e.target.value;
+      console.log(priceValue);
     });
   }
 }
 
 function listenerButtonCategory() {
-  for (let i = 0; i < filterButton.length; i++) {
-    filterButton[i].addEventListener('click', async e => {
+  for (let i = 0; i < filterButtonCategory.length; i++) {
+    filterButtonCategory[i].addEventListener('click', async (e) => {
       e.preventDefault();
-      let priceValue = e.target.value;
-      return priceValue;
+      const categoryValue = e.target.value;
+      console.log(categoryValue);
     });
   }
 }
 
-listenerButton();
+function listenerButtonDimensions() {
+  for (let i = 0; i < filterButtonDimensions.length; i++) {
+    filterButtonDimensions[i].addEventListener('click', async (e) => {
+      e.preventDefault();
+      const dimensionsValue = e.target.value;
+      console.log(dimensionsValue);
+    });
+  }
+}
+
+function listenerSearchButton() {
+  searchButton.addEventListener('click', async (e) => {
+    e.preventDefault();
+    const searchValue = e.target.value;
+    console.log(searchValue);
+  });
+}
+
+listenerButtonPrice();
+listenerButtonCategory();
+listenerButtonDimensions();
+listenerSearchButton();;
