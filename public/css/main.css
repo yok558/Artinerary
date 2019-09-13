@@ -1,3 +1,20 @@
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  ᅠᅠ
+}
+footer {
+  flex: 1 0 auto;
+}
+
+.main{
+  min-height: 54.9vh;
+}
+
 .header__hr {
   border: none;
   background-color: #fff;
@@ -112,4 +129,9 @@
 .magazine-size-img {
   width: 130px;
   height: 130px;
+}
+
+.buy-img {
+  width: 400px;
+  height: 400px;
 }

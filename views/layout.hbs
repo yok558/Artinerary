@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href='./css/main.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script defer src="js/script.js"></script>
+  <title>Artinerary</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar-dark nav-border-bottom py-3 header-nav_color">
+      <div class="container-fluid align-middle">
+        <div class="row">
+          <div class="col-xl-1"></div>
+          <h1 id="home" class="header-nav__head col-xl-6"><a href="#">Artinerary</a></h1>
+          <div class="col-xl-3 mt-3 text-right">
+            <a id="nav-search" href="#" class="m-2"><img src="img/header/search.png" alt="search" /></a>
+            <a id="nav-like" href="#" class="m-2"><img src="img/header/likes.png" alt="likes" />
+              <sub class="nav__counter" id="nav-like__counter">{{countLike}}</sub> </a>
+            <a id="nav-basket" href="#" class="m-2"><img src="img/header/basket.png" alt="bascet" />
+              <sub class="nav__counter" id="nav-bascet__counter">{{countBascet}}</sub> </a>
+            <a id="nav-human" href="#" class="m-2"><img src="img/header/people.png" alt="peoples" /></a>
+          </div>
+          <div class="col-xl-2 mt-3">
+            <a class="sign-up" id="sign-up" href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  {{{body}}}
+
+  <footer class="footer p-4 navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row text-xl-left">
+          <div class="col-xl-6">
+            <button type="button" class="btn btn-dark btn_footer mx-auto">Who We Are </button>
+            <ul class="list-unstyled quick-links">
+              <li></li><a class="text-light m-2" href="">About us</a></li>
+              <li></li><a class="text-light m-2" href="">Magazine</a></li>
+              <li></li><a class="text-light m-2" href="">The team</a></li>
+              <li></li><a class="text-light m-2" href="">Our selection criteria</a></li>
+              <li></li><a class="text-light m-2" href="">FAQ</a></li>
+              <li></li><a class="text-light m-2" href="">Jobs</a></li>
+              <li></li><a class="text-light m-2" href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-6">
+            <button type="button" class="btn btn-dark btn_footer mx-auto">Customer Service </button>
+            <ul class="list-unstyled quick-links">
+              <li></li><a class="text-light m-2" href="">Contact us</a></li>
+              <li></li><a class="text-light m-2" href="">Legal notices</a></li>
+              <li></li><a class="text-light m-2" href="">General Terms and Conditions</a></li>
+              <li></li><a class="text-light m-2" href="">Customer testimonials</a></li>
+              <li></li><a class="text-light m-2" href="">My profile</a></li>
+              <li></li><a class="text-light m-2" href="">Privacy center</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
