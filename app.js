@@ -9,12 +9,8 @@ const session = require('express-session');
 const FileStore = require('session-file-store')(session);
 const mongoose = require('mongoose');
 const indexRouter = require('./routes/index');
-// const entriesRouter = require('./routes/entries');
-// const { cookiesCleaner } = require('./middleware/auth');
 
 const app = express();
-
-// Подключаем mongoose.
 
 mongoose.connect(
   'mongodb+srv://yuri:KyWkKuStyEP3PvL@cluster0-snj5l.mongodb.net/Artinerary?retryWrites=true&w=majority',
