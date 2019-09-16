@@ -16,7 +16,13 @@ const app = express();
 
 // Подключаем mongoose.
 
-mongoose.connect('mongodb://localhost:27017/art', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(
+  'mongodb+srv://yuri:KyWkKuStyEP3PvL@cluster0-snj5l.mongodb.net/Artinerary?retryWrites=true&w=majority',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+);
 
 const hbs = handlebars.create({
   defaultLayout: 'layout',
