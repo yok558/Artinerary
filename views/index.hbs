@@ -109,6 +109,22 @@
           </div>
         </div>
       </div>
+      <h4 class="home-page-header">Magazine</h4>
+      <div class="store row" id="storePlace">
+        {{#each store}}
+        <div class="magazine-wrap py-5 col-xl-4">
+          <div class="wrap">
+            <img class="float-left mr-3 magazine-size-img" src="{{this.img}}" alt="pic">
+            <div class="desc-head">
+              {{this.name}}
+            </div>
+            <div class="desc-description">
+              {{this.author}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
       <h4 class="home-page-header">Our Latest Collection Inspired by
         <span class="home-page-header__span">
           Robert Frank
@@ -146,22 +162,6 @@
             Safe Shipment
           </p>
         </div>
-      </div>
-      <h4 class="home-page-header">Magazine</h4>
-      <div class="store row" id="storePlace">
-        {{#each store}}
-        <div class="magazine-wrap py-5 col-xl-4">
-          <div class="wrap">
-            <img class="float-left mr-3 magazine-size-img" src="{{this.img}}" alt="pic">
-            <div class="desc-head">
-              {{this.name}}
-            </div>
-            <div class="desc-description">
-              {{this.author}}
-            </div>
-          </div>
-        </div>
-        {{/each}}
       </div>
     </div>
   </section>
