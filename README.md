@@ -6,10 +6,13 @@
 <b><h3>Функционал для прототипа:</h3><hr></hr></b>
 <ul>
   <li>Подтянуть 50-100 предметов искусства до 5000 долл США с ebay</li>
-  <li>Сортировка предметов искусства по 3м параметрам
-    • Size (dimensions length/height)
-    • Price
-    • Type (sculpture, photograph, painting)</li>
+  <li>Сортировка предметов искусства по 3м параметрам:
+    <ul>
+      <li>Size (dimensions length/height)</li>
+      <li>Price</li>
+      <li>Type (sculpture, photograph, painting)</li>
+    </ul>
+</li>
   <li>Нажать на предмет искусства, которое приведет к открытию нового окна с информацией о нем (цена, размер, краткое описание). Сделать кнопку «купить».</li>
   <li>Сделать ссылку на дополнительные услуги (provenance verification)
     • Standard 
